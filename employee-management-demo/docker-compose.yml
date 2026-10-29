@@ -1,0 +1,16 @@
+services:
+  employee-management:
+    build: .
+    container_name: employee-management-demo
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - employee_data:/app/data
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DATA_DIR: /app/data
+
+volumes:
+  employee_data:

@@ -1,0 +1,12 @@
+{
+  "name": "employee-management-demo",
+  "version": "1.0.0",
+  "description": "A deployable employee management demo with a web UI and REST API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": { "express": "^4.21.2" }
+}
